@@ -2,7 +2,14 @@
 - React with vite
 - implemeted tailwind
 - Header
+- Router
 - Login Form
+- Sign up Fprm
+- Form validation
+- useRef hook
+- Firebase setup
+- Deploy app to production (need to check)
+
 
 
 # Features
