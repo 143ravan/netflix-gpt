@@ -1,6 +1,10 @@
+import Header from "../components/common/Header"
+
 const Browse = () => {
   return (
-    <div>Browse</div>
+    <>
+    <Header />
+    </>
   )
 }
 
