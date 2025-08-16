@@ -1,6 +1,8 @@
 # Neflix-GPT
 - React with vite
 - implemeted tailwind
+- Header
+- Login Form
 
 
 # Features
