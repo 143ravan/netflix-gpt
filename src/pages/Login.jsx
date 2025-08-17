@@ -1,17 +1,15 @@
 
 import { useRef, useState } from 'react'
 import { useDispatch } from 'react-redux';
-import { useNavigate } from 'react-router-dom';
 import { createUserWithEmailAndPassword, signInWithEmailAndPassword, updateProfile } from "firebase/auth";
 import Header from '../components/common/Header'
-import { BG_IMAGE_URL } from '../utils/constant.js'
+import { BG_IMAGE_URL, USER_AVATAR } from '../utils/constant.js'
 import {checkValidData} from '../utils/validate.js'
 import { auth } from '../utils/firebase.js'
 import { addUser } from '../utils/userSlice.js';
 
 const Login = () => {
   const [isSignIn, setIsSignIn] = useState(true)
-  const navigate = useNavigate()
   const dispatch = useDispatch()
   const [errorMessage, setErrorMessage] = useState(null)
   const name = useRef(null)
@@ -25,7 +23,6 @@ const Login = () => {
     signInWithEmailAndPassword(auth, email.current.value, password.current.value)
     .then((userCredential) => {
       const user = userCredential.user;
-      navigate('/browse')
     })
     .catch((error) => {
       const errorCode = error.code;
@@ -39,11 +36,10 @@ const Login = () => {
       const user = userCredential.user;
        updateProfile (user, {
         displayName: name.current.value,
-        photoURL: "https://media.licdn.com/dms/image/v2/C5603AQGEBvQwMJIc4Q/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1624424892643?e=1758153600&v=beta&t=U4b494tZHtQ1oRmQM1D8Z7e30KRmhgSmWdvAs1g4Z3k"
+        photoURL: USER_AVATAR
       }).then(() => {
         const { uid, email, displayName, photoURL } = auth.currentUser;
         dispatch(addUser ({uid, email, displayName, photoURL}))
-        navigate('/browse')
       }).catch((error) => {
         setErrorMessage(error.message)
       });

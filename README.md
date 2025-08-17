@@ -14,6 +14,19 @@
 - created reduc store with userSlice
 - Implemented signout
 - update profile api call
+- Bugfix redirect user to page as per their loggedIn status
+- unsubscribed to the onAuthStateChange callback
+- Register for TMDB, create app and get access token
+- Get data from TMDB now playing movie api
+- Custom hook for now playing movies
+- update store with movies data
+- create MovieSlice
+- Planning for main container and secondary container
+- foetch data for trailer video
+- update store with trailer video data
+- embedded the the video and make it autoplay with mute.
+- implemented tailwind classes to make main container looks.
+
 
 # Features
   - Login/Sign up
