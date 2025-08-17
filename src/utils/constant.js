@@ -5,7 +5,9 @@ export const USER_AVATAR = 'https://i.pinimg.com/736x/61/54/76/61547625e01d8daf9
 export const API_TOKEN = 'eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIyODk0OGFkN2NmYWJmZTMxMTE1MGYzM2VhN2Y2NjJjNCIsIm5iZiI6MTc1NTM5NjU2Ni40MjEsInN1YiI6IjY4YTEzOWQ2Mzg2N2M3Y2ViYjg2ZmEwYiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.OuIYAxXlmgE0FDfKkMPvKNMsTeCLukV0NWkTbTtl3Xs'
 export const API_KEY = '28948ad7cfabfe311150f33ea7f662c4'
 export const MOVIE_VIDEO = 'https://api.themoviedb.org/3/movie/755898/videos?language=en-US'
-export const MOVIE_LIST = 'https://api.themoviedb.org/3/movie/now_playing?page=1'
+export const PLAYING_MOVIE_LIST = 'https://api.themoviedb.org/3/movie/now_playing?page=1'
+export const POPULAR_MOVIE_LIST = 'https://api.themoviedb.org/3/movie/popular?language=en-US&page=1'
+export const TMDB_IMG_CDN = 'https://image.tmdb.org/t/p/w200/'
 
 export const HEADERS = {
     headers: {
