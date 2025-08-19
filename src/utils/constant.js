@@ -15,3 +15,17 @@ export const HEADERS = {
     'Content-Type': 'application/json'
   }
 }
+export const SUPPORTED_LANGUAGES = [
+  {
+    identifier: 'hn',
+    name: 'Hindi'
+  },
+    {
+    identifier: 'sp',
+    name: 'Spanish'
+  },
+    {
+    identifier: 'en',
+    name: 'English'
+  }
+]

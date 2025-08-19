@@ -30,6 +30,9 @@
 - Movielist and MovieCard component
 - TMDB image cdn
 - usePopular movies custom hook
+- GPT search feature
+- GPT Search bar
+- Multi-language feature
 
 
 # Features
