@@ -8,6 +8,7 @@ export const MOVIE_VIDEO = 'https://api.themoviedb.org/3/movie/755898/videos?lan
 export const PLAYING_MOVIE_LIST = 'https://api.themoviedb.org/3/movie/now_playing?page=1'
 export const POPULAR_MOVIE_LIST = 'https://api.themoviedb.org/3/movie/popular?language=en-US&page=1'
 export const TMDB_IMG_CDN = 'https://image.tmdb.org/t/p/w200/'
+export const GROK_OPEN_AI = 'https://api.groq.com/openai/v1/chat/completions'
 
 export const HEADERS = {
     headers: {

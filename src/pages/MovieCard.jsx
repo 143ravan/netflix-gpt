@@ -1,6 +1,7 @@
 import { TMDB_IMG_CDN } from "../utils/constant"
 
 const MovieCard = ({posterPath}) => {
+  if(!posterPath)return
   return (
     <>
     <div className="w-50 rounded-sm">
