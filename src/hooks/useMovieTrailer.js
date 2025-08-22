@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { HEADERS } from "../utils/constant";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { addTrailerVideo } from "../utils/moviesSlice";
 
 const useMovieTrailer = (movieId) => {
@@ -15,7 +15,7 @@ const useMovieTrailer = (movieId) => {
   }
 
   useEffect(() => {
-    trailerVideo && getMovieVideo()
+    !trailerVideo && getMovieVideo()
   }, [])
 
 }

@@ -45,8 +45,8 @@ function Header() {
   }
 
   return (
-    <div className='flex justify-between absolute w-screen bg-gradient-to-b from-black z-10'>
-      <div className='px-8 py-2'>
+    <div className='flex flex-col md:flex-row md:justify-between absolute w-screen bg-gradient-to-b from-black z-10'>
+      <div className='px-8 py-2 mx-auto md:mx-0'>
         <img className='w-44' src={NETFLIX_LOGO} alt='logo' />
       </div>
       {

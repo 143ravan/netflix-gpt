@@ -4,7 +4,7 @@ const MovieCard = ({posterPath}) => {
   if(!posterPath)return
   return (
     <>
-    <div className="w-50 rounded-sm">
+    <div className="w-36 md:w-50 rounded-sm">
       <img src={TMDB_IMG_CDN + posterPath} alt="NA"></img>
     </div>
     </>

@@ -5,7 +5,7 @@ import { HEADERS, PLAYING_MOVIE_LIST } from "../utils/constant"
 
 const useNowPlayingMovies = () => {
   const dispatch = useDispatch()
-  const nowPlayingMovies = useSelector ((store) => store.movies.nowPlayingMovies)
+  const nowPlayingMovies = useSelector((store) => store.movies.nowPlayingMovies)
 
   const getNowPlayingMovie = async () => {
     const data = await fetch(PLAYING_MOVIE_LIST, HEADERS)
@@ -13,7 +13,7 @@ const useNowPlayingMovies = () => {
     dispatch(addNowPlayingMovies (json.results))
   }
   useEffect (() => {
-    nowPlayingMovies && getNowPlayingMovie()
+    !nowPlayingMovies && getNowPlayingMovie()
   }, [])
 }
 

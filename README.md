@@ -33,7 +33,16 @@
 - GPT search feature
 - GPT Search bar
 - Multi-language feature
-
+- GPT search
+- Open-ai api key
+- GPT search api call
+- fetched GPT movie suggestion
+- from gpt sugeesion fetched movied from TMDB api
+- re use movielist component to display movie suggestion containerer
+- memoization
+- multilingual support
+- added env file
+- made website responsive
 
 # Features
   - Login/Sign up
